@@ -5,7 +5,7 @@ function init() {
   var mapOptions = {
     center: myLocation,
     zoom: 10,
-    mapTypeId: 'hybrid',
+    mapTypeId: 'roadmap',
     mapTypeControl: true,
     mapTypeControlOptions: {
       position: google.maps.ControlPosition.LEFT_TOP,
@@ -16,9 +16,9 @@ function init() {
 
   // Form a marker for the map
   const Star = {
-    fillOpacity: 0.8,
+    fillOpacity:.2,
     scale: 0.15,
-    strokeWeight: 20,
+    strokeWeight: 30,
   };
 
   //define the map
@@ -36,7 +36,7 @@ function init() {
   var contentString = '<h1 id="headermap">Shiraz City</h1><p id="textmap">Shiraz is a city in south-central Iran, known for its literary history and many gardens. </p>';
   var infowindow = new google.maps.InfoWindow({
     content: contentString,
-    maxWidth: 200,
+    maxWidth: 500,
   });
 
   //  this is info message when mouse is put on marker
