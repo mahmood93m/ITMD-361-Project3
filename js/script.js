@@ -16,13 +16,9 @@ function init() {
 
   // Form a marker for the map
   const Star = {
-    path:
-      "M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z",
-    fillColor: "blue",
     fillOpacity: 0.8,
     scale: 0.15,
-    strokeColor: "black",
-    strokeWeight: 2,
+    strokeWeight: 20,
   };
 
   //define the map
@@ -57,13 +53,10 @@ function init() {
   const drawingManager = new google.maps.drawing.DrawingManager({
     drawingControl: true,
     drawingControlOptions: {
-      position: google.maps.ControlPosition.TOP_CENTER,
+      position: google.maps.ControlPosition.LEFT_TOP,
       drawingModes: [
         google.maps.drawing.OverlayType.MARKER,
         google.maps.drawing.OverlayType.CIRCLE,
-        google.maps.drawing.OverlayType.POLYGON,
-        google.maps.drawing.OverlayType.POLYLINE,
-        google.maps.drawing.OverlayType.RECTANGLE,
       ],
     },
     markerOptions: {
