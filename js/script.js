@@ -49,7 +49,6 @@ function init() {
     infowindow.close();
   });
 
-  // Enable Drawing Tool (marker, circle, etc.) at the top of the Map.
   const drawingManager = new google.maps.drawing.DrawingManager({
     drawingControl: true,
     drawingControlOptions: {
@@ -76,7 +75,7 @@ function init() {
   drawingManager.setMap(myMap); // this is Drawing Tool on the map
 }
 
-// Box Slider with auto play and vertical transition between slides.
+// Box Slider with auto play
 $(document).ready(function(){
   $('.slider').slSlider({
     mode: 'horizontal',
